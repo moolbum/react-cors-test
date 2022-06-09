@@ -1,16 +1,15 @@
 import React, { useEffect } from "react";
-
 const { kakao, naver }: any = window;
 
 function App() {
-  useEffect(() => {
-    const container = document.getElementById("kakaoMap");
-    const options = {
-      center: new kakao.maps.LatLng(33.450701, 126.570667),
-      level: 3,
-    };
-    const map = new kakao.maps.Map(container, options);
-  }, []);
+  // useEffect(() => {
+  //   const container = document.getElementById("kakaoMap");
+  //   const options = {
+  //     center: new kakao.maps.LatLng(33.450701, 126.570667),
+  //     level: 3,
+  //   };
+  //   const map = new kakao.maps.Map(container, options);
+  // }, []);
 
   useEffect(() => {
     const container = document.getElementById("naverMap");
@@ -38,7 +37,7 @@ function App() {
 
   return (
     <main style={{ display: "flex" }}>
-      <article>
+      {/* <article>
         <h1>카카오 지도</h1>
         <div
           id="kakaoMap"
@@ -47,7 +46,7 @@ function App() {
             height: "500px",
           }}
         ></div>
-      </article>
+      </article> */}
 
       <article>
         <h1>네이버 지도</h1>
